@@ -1182,7 +1182,7 @@ in source code, screenshots, documentation, or public repositories.
 
 ---
 
-# 📸 Screenshots
+## 📸 Screenshots
 
 The following screenshots demonstrate the complete IncidentIQ workflow, including the dashboard, Hindsight historical recall, AI analysis, verified memory retention, and rejection of unverified knowledge.
 
@@ -1190,70 +1190,47 @@ The following screenshots demonstrate the complete IncidentIQ workflow, includin
 
 The main IncidentIQ interface allows an engineer to report a production incident and trigger AI-powered analysis.
 
+![IncidentIQ Dashboard](docs/screenshots/dashboard.png)
 
+---
 
 ## Hindsight Historical Memory
 
 For a known incident, IncidentIQ recalls relevant historical knowledge from Hindsight.
 
+![Hindsight Historical Memory](docs/screenshots/payment-memory-saved.png)
 
+---
 
 ## AI Incident Analysis
 
 Groq analyzes the current incident together with the historical context recalled from Hindsight.
 
+![AI Incident Analysis](docs/screenshots/payment-ai-analysis.png)
 
+---
 
 ## Verified Memory Saved
 
 When a documented historical resolution exists, IncidentIQ can retain verified incident knowledge for future incidents.
 
+![Verified Memory Saved](docs/screenshots/payment-memory-saved.png)
 
+---
 
 ## Unverified Memory Rejected
 
 When historical information contains only hypotheses and no documented completed resolution, IncidentIQ prevents the information from becoming institutional memory.
 
+![Unverified Memory Rejected](docs/screenshots/order-memory-not-saved.png)
 
+---
 
 ## System Architecture
 
 The architecture diagram shows how the engineer, React frontend, FastAPI backend, Hindsight, Groq, and memory-quality gate work together.
 
-
-
-# 📈 Why IncidentIQ Is Different
-
-IncidentIQ is designed around the idea that an incident-response agent should become more useful as verified operational knowledge accumulates.
-
-The system does not simply answer:
-
-```text
-
-"What should I do?"
-
-```
-
-It also asks:
-
-```text
-
-"What has happened before?"
-
-```
-
-and:
-
-```text
-
-"Was the previous knowledge actually verified?"
-
-```
-
-This creates a persistent feedback loop between past incidents and future incident response.
-
----
-
+![IncidentIQ System Architecture](docs/screenshots/architecture.png)
 # 🧠 Core Design Principle
 
 ```text
@@ -1398,4 +1375,4 @@ Render
 
 ```
 
-IncidentIQ turns verified incident experience into persistent institutional memory so future incidents can benefit from what the system has already learned.
+IncidentIQ turns verified incident experience into persistent institutional memory so future incidents can benefit from what the system has already learned
