@@ -18,7 +18,7 @@ import {
 
 import "./App.css";
 
-const API_URL = "http://127.0.0.1:8000";
+const API_URL = "https://incidentiq-backend-ftab.onrender.com";
 
 function App() {
   const [incident, setIncident] = useState("");
